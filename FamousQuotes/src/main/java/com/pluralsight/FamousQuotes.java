@@ -25,7 +25,7 @@ public class FamousQuotes {
                 int input = myScanner.nextInt();
                 myScanner.nextLine();
 
-                if (input >= 1 && input <= 10) {
+                if (input >= 1 && input <= quotes.length) {
                     System.out.println("Your quote is: \n" + quotes[input - 1]);
                     System.out.println("Do you want to choose another quote? (Yes/No)");
                     String loopInput = myScanner.nextLine().trim();
@@ -39,7 +39,6 @@ public class FamousQuotes {
 
             } catch (Exception e) {
                 System.out.println("Your number was out of range. Try again.");
-                e.printStackTrace();
             }
 
         }
