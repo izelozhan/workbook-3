@@ -52,7 +52,6 @@ public class BedtimeStories {
         } catch (Exception e) {
             System.out.println("Error occurred");
         }
-
         scanner.close();
     }
 }
