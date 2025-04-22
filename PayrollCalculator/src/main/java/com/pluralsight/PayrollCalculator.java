@@ -27,7 +27,7 @@ public class PayrollCalculator {
                 System.out.println("ID: " + newEmployee.getEmployeeId() );
                 System.out.println("NAME: " + newEmployee.getName());
                 System.out.println("HOURS: " + newEmployee.getHoursWorked());
-                System.out.println("PAY RATE: " + newEmployee.getPayRate());
+                System.out.println("PAY RATE: " + newEmployee.calculateGrossPay());
                 System.out.println("\n");
             }
             bufReader.close();
