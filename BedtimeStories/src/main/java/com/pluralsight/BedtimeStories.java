@@ -1,6 +1,4 @@
 package com.pluralsight;
-
-import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Scanner;
 
@@ -39,12 +37,12 @@ public class BedtimeStories {
                 System.out.println("Please select a number to read story");
                 return;
         }
-        if (is == null){
+        if (is == null) {
             System.out.println("Story is not found!");
             return;
         }
 
-
+        //try and catch
         try {
             Scanner fileScanner = new Scanner(is);
             while (fileScanner.hasNextLine()) {
@@ -52,8 +50,9 @@ public class BedtimeStories {
                 System.out.println(input);
             }
         } catch (Exception e) {
-            System.out.println("Error occured");
+            System.out.println("Error occurred");
         }
+
         scanner.close();
     }
 }
