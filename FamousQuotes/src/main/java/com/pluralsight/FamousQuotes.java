@@ -39,6 +39,7 @@ public class FamousQuotes {
 
             } catch (Exception e) {
                 System.out.println("Your number was out of range. Try again.");
+
             }
 
         }
