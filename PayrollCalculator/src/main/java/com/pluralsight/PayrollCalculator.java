@@ -8,7 +8,7 @@ public class PayrollCalculator {
     public static void main(String[] args) {
 
         try {
-            FileReader fileReader = new FileReader("/c:/Users/izel/pluralsight/workbook-3/PayrollCalculator/employees.csv");
+            FileReader fileReader = new FileReader("c:/Users/izel/pluralsight/workbook-3/PayrollCalculator/employees.csv");
             BufferedReader bufReader = new BufferedReader(fileReader);
             String input;
 
